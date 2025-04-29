@@ -12,74 +12,67 @@ export default function TabTwoScreen() {
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#fe5000', dark: '#353636' }}
       headerImage={
-        <IconSymbol
-          size={310}
-          color="#808080"
-          name="chevron.left.forwardslash.chevron.right"
+        <Image
+        source={require('@/assets/images/icone-cartão.png')}
           style={styles.headerImage}
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Cartões Vinculados</ThemedText>
+        <ThemedText type="title">Meus cartões</ThemedText>
       </ThemedView>
       <ThemedText></ThemedText>
       <Collapsible title="Cartão de Débito Visa">
+       <ul>
         <ThemedText>
-          Titular do Cartão: Mateus{' '}
+        <li>Titular do Cartão: Mateus{' '}</li>
         </ThemedText>
+        <ThemedText>
+        <li>Saldo Disponível: R$: 2500,00</li>
+        </ThemedText>
+        <ThemedText>
+       <li>Último Pagamento Realizado: Casa China 22/04/2025 13:50pm</li>
+        </ThemedText>
+        </ul>
       </Collapsible>
       <Collapsible title="Cartão de Crédito Bradesco">
+      <ul>
         <ThemedText>
-          Titular do cartão: Mateus{' '}
+        <li>Titular do cartão: Mateus{' '}</li>
         </ThemedText>
+        <ThemedText>
+        <li>Fatura: R$: 5000,00</li>
+        </ThemedText>
+        <ThemedText>
+         <li>Limite de Crédito: R$: 1.500,00{' '}</li>
+        </ThemedText>
+        <ThemedText>
+        <li>Último Pagamento Realizado: Mercado Livre.com 01/04/2025 18:00</li>
+        </ThemedText>
+        </ul>
       </Collapsible>
-      <Collapsible title="Images">
+      <ThemedText type="title">Pix</ThemedText>
+      <Collapsible title="Minha chave Pix">
+      <ul>
         <ThemedText>
-          For static images, you can use the <ThemedText type="defaultSemiBold">@2x</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">@3x</ThemedText> suffixes to provide files for
-          different screen densities
+        <li>Chave Pix: 029.222.455-41</li>
         </ThemedText>
-        <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
-        <ExternalLink href="https://reactnative.dev/docs/images">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
+        <ThemedText>
+        <li>Realizar Pix:</li>
+        </ThemedText>
+        <ThemedText>
+        <li>Receber Pix:</li>
+        </ThemedText>
+        </ul>
       </Collapsible>
-      <Collapsible title="Custom fonts">
-        <ThemedText>
-          Open <ThemedText type="defaultSemiBold">app/_layout.tsx</ThemedText> to see how to load{' '}
-          <ThemedText style={{ fontFamily: 'SpaceMono' }}>
-            custom fonts such as this one.
-          </ThemedText>
+      <Collapsible title="Transações Recentes">
+      <ul>
+      <ThemedText>
+        <li>Pix Realizado: 12/04/2025 15:40 Valor: R$100,00 para Pedro</li>
         </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/versions/latest/sdk/font">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Light and dark mode components">
         <ThemedText>
-          This template has light and dark mode support. The{' '}
-          <ThemedText type="defaultSemiBold">useColorScheme()</ThemedText> hook lets you inspect
-          what the user's current color scheme is, and so you can adjust UI colors accordingly.
+        <li>Pix Recebido: 20/03/2025 00:30 Valor:R$: 10,00 de Rafael</li>
         </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/develop/user-interface/color-themes/">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Animations">
-        <ThemedText>
-          This template includes an example of an animated component. The{' '}
-          <ThemedText type="defaultSemiBold">components/HelloWave.tsx</ThemedText> component uses
-          the powerful <ThemedText type="defaultSemiBold">react-native-reanimated</ThemedText>{' '}
-          library to create a waving hand animation.
-        </ThemedText>
-        {Platform.select({
-          ios: (
-            <ThemedText>
-              The <ThemedText type="defaultSemiBold">components/ParallaxScrollView.tsx</ThemedText>{' '}
-              component provides a parallax effect for the header image.
-            </ThemedText>
-          ),
-        })}
+        </ul>
       </Collapsible>
     </ParallaxScrollView>
   );
@@ -88,9 +81,9 @@ export default function TabTwoScreen() {
 const styles = StyleSheet.create({
   headerImage: {
     color: '#fe5000',
-    bottom: -90,
-    left: -35,
-    position: 'absolute',
+    bottom: -70,
+    left: -10,
+    position: 'margin top',
   },
   titleContainer: {
     flexDirection: 'row',

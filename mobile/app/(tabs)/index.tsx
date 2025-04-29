@@ -11,22 +11,24 @@ export default function HomeScreen() {
       headerBackgroundColor={{ light: '#fe5000', dark: '#1D3D47' }}
       headerImage={
         <Image
-          source={require('@/assets/images/partial-react-logo.png')}
+          source={require('@/assets/images/Usuário.png')}
           style={styles.reactLogo}
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Conta Bancária</ThemedText>
-        
+        <ThemedText type="title">Bem-Vindo Mateus</ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Saldo Bancario: R$: 0,50</ThemedText>
+        <ThemedText type="subtitle">Conta</ThemedText>
+        <ThemedText>
+        R$: 2500,00{' '}
+        </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Conta.</ThemedText>
+        <ThemedText type="Boletos Pendentes"></ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Configurações.</ThemedText>
+        <ThemedText type="subtitle"></ThemedText>
       </ThemedView>
     </ParallaxScrollView>
   );
@@ -43,10 +45,10 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
+    height: 150,
+    width: 150,
+    bottom: -70,
+    left: 10,
+    position: 'margin top',
   },
 });
