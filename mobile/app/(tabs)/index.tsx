@@ -11,7 +11,7 @@ export default function HomeScreen() {
       headerBackgroundColor={{ light: '#fe5000', dark: '#1D3D47' }}
       headerImage={
         <Image
-          source={require('@/assets/images/Usuário.png')}
+          source={require('@/assets/images/favicon.png')}
           style={styles.reactLogo}
         />
       }>
@@ -25,7 +25,13 @@ export default function HomeScreen() {
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="Boletos Pendentes"></ThemedText>
+        <ThemedText type="subtitle">Boletos Pendentes</ThemedText>
+        <ThemedText>
+        Copel: Conta de Luz | Vencimento: 30/04/2025 | Valor: R$ 580,90
+        </ThemedText>
+        <ThemedText>
+        Spotfy: Plano Premium Mensal | Vencimento: 01/05/2025 | Valor: R$ 21,90
+        </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle"></ThemedText>
@@ -41,7 +47,7 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   stepContainer: {
-    gap: 8,
+    gap: 7,
     marginBottom: 8,
   },
   reactLogo: {

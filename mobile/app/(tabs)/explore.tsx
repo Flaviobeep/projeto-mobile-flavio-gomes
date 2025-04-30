@@ -57,10 +57,10 @@ export default function TabTwoScreen() {
         <li>Chave Pix: 029.222.455-41</li>
         </ThemedText>
         <ThemedText>
-        <li>Realizar Pix:</li>
+       <li><button>Realizar Pix:</button></li>
         </ThemedText>
         <ThemedText>
-        <li>Receber Pix:</li>
+       <li><button>Receber Pix:</button></li>
         </ThemedText>
         </ul>
       </Collapsible>
